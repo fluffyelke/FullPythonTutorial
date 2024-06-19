@@ -124,4 +124,34 @@ user_0 = {
 
 for key, value in user_0.items():
     print(f"\nKey: {key}\nValue: {value}")
+
+# looping through all the keys in a dictionary
+
+for name in favotite_numbers:
+    print(f"{name.title()}")
+
+friends = ['pepo', 'alaina']
+for name in favotite_numbers.keys():
+    print(f"{name.title()}")
+
+    if name in friends:
+        number = favotite_numbers.get(name)
+        print(f"\t{name.title()}, you have same number as the others: {number}")
+
+    if 'elinna' not in favotite_numbers.keys():
+        print(f"Elinna, you are not in the dictionary")
+
+# print dictionary in sorted order
+for name in sorted(favotite_numbers.keys()):
+    print(f"{name.title()}, thank you for taking the poll.")
+
+# looping through all values in dictionary
+for values in favotite_numbers.values():
+    print(f'{values}')
+
+print(f"Print unique values in favorite_numbers")
+# print unique values in a dictionary
+for values in set(favotite_numbers.values()):
+    print(values)
+
     
